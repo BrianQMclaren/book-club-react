@@ -25,7 +25,6 @@ body {
 }
 
 h1,
-p,
 form button {
   color: white;
 }
@@ -171,6 +170,8 @@ td:last-child {
   font-size: 1.16em;
   color: rgb(118, 118, 118);
 }
+
+
 /* pending */
 
 .pending {

@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders correctly 1`] = `
+<div
+  className="main"
+>
+  <form>
+    <input
+      onChange={[Function]}
+      placeholder="Search"
+      type="text"
+      value=""
+    />
+  </form>
+  <div>
+    <BookCard
+      author="Rick Riordan"
+      cat={
+        Array [
+          "book",
+          "hardcover",
+        ]
+      }
+      cover="a.jpg"
+      genre="fantasy"
+      id={0}
+      inStock={true}
+      pages={384}
+      price={12.5}
+      series="Percy Jackson and the Olympians"
+      title="The Lightning Thief"
+    />
+    <BookCard
+      author="Rick Riordan"
+      cat={
+        Array [
+          "book",
+          "paperback",
+        ]
+      }
+      cover="b.jpg"
+      genre="fantasy"
+      id={1}
+      inStock={true}
+      pages={304}
+      price={6.49}
+      series="Percy Jackson and the Olympians"
+      title="The Sea of Monsters"
+    />
+    <BookCard
+      author="Jostein Gaarder"
+      cat={
+        Array [
+          "book",
+          "paperback",
+        ]
+      }
+      cover="c.jpg"
+      genre="fantasy"
+      id={2}
+      inStock={true}
+      pages={64}
+      price={3.07}
+      title="Sophie's World : The Greek Philosophers"
+    />
+    <BookCard
+      author="Michael McCandless"
+      cat={
+        Array [
+          "book",
+          "paperback",
+        ]
+      }
+      cover="d.jpg"
+      genre="IT"
+      id={3}
+      inStock={true}
+      pages={475}
+      price={30.5}
+      title="Lucene in Action, Second Edition"
+    />
+  </div>
+</div>
+`;

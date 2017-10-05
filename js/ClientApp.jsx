@@ -2,16 +2,13 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 import { AppContainer } from 'react-hot-loader';
 import App from './App';
 
 const renderApp = () => {
   render(
     <AppContainer>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <App />
     </AppContainer>,
     document.getElementById('app'),
   );
