@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1aca8157c3ee0e2608f9"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1bb432045efb6f174aa4"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -756,6 +756,14 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 
 
+var FourOhFour = function FourOhFour() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'h1',
+    null,
+    '404'
+  );
+};
+
 var App = function App() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["a" /* BrowserRouter */],
@@ -772,11 +780,12 @@ var App = function App() {
         path: '/details/:id',
         component: function component(props) {
           var selectedBook = __WEBPACK_IMPORTED_MODULE_5__data_json___default.a.books.find(function (book) {
-            return props.params.id === book.id;
+            return props.match.params.id === book.id;
           });
           return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Details__["a" /* default */], _extends({ book: selectedBook }, props));
         }
-      })
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Route */], { component: FourOhFour })
     )
   );
 };
@@ -789,6 +798,8 @@ var _temp = function () {
   if (typeof __REACT_HOT_LOADER__ === 'undefined') {
     return;
   }
+
+  __REACT_HOT_LOADER__.register(FourOhFour, 'FourOhFour', '/Users/brian/Sites/Websites/book-webapp/js/App.jsx');
 
   __REACT_HOT_LOADER__.register(App, 'App', '/Users/brian/Sites/Websites/book-webapp/js/App.jsx');
 
@@ -806,7 +817,8 @@ var _temp = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components__ = __webpack_require__("./node_modules/styled-components/dist/styled-components.es.js");
-var _templateObject = _taggedTemplateLiteralLoose(['\n  width: 52%;\n  border: 1px solid;\n  border-color: rgba(210, 210, 210, 0.5);\n  padding-right: 10px;\n  margin-bottom: 25px;\n'], ['\n  width: 52%;\n  border: 1px solid;\n  border-color: rgba(210, 210, 210, 0.5);\n  padding-right: 10px;\n  margin-bottom: 25px;\n']),
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__("./node_modules/react-router-dom/es/index.js");
+var _templateObject = _taggedTemplateLiteralLoose(['\n  width: 52%;\n  border: 1px solid;\n  border-color: rgba(210, 210, 210, 0.5);\n  padding-right: 10px;\n  margin-bottom: 25px;\n  text-decoration: none;\n  color: black;\n'], ['\n  width: 52%;\n  border: 1px solid;\n  border-color: rgba(210, 210, 210, 0.5);\n  padding-right: 10px;\n  margin-bottom: 25px;\n  text-decoration: none;\n  color: black;\n']),
     _templateObject2 = _taggedTemplateLiteralLoose(['\n  float: left;\n  width: 33%;\n  margin-right: 10px;\n'], ['\n  float: left;\n  width: 33%;\n  margin-right: 10px;\n']);
 
 function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
@@ -814,32 +826,37 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 
 
-var Wrapper = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */].div(_templateObject);
+
+var Wrapper = Object(__WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Link */])(_templateObject);
 
 var Image = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */].img(_templateObject2);
 
 var BookCard = function BookCard(props) {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    Wrapper,
-    null,
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Image, { alt: props.title + ' Show Book', src: '/public/images/books/' + props.cover }),
+    __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Link */],
+    { to: '/details/' + props.id },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'div',
+      Wrapper,
       null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Image, { alt: props.title + ' Show Book', src: '/public/images/books/' + props.cover }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'h3',
+        'div',
         null,
-        props.title
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'h4',
-        null,
-        props.author
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'p',
-        null,
-        props.genre
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h3',
+          null,
+          props.title
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h4',
+          null,
+          props.author
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          props.genre
+        )
       )
     )
   );
@@ -939,11 +956,6 @@ var Details = function Details(props) {
     "div",
     { className: "details" },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "header",
-      null,
-      "BookClub"
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "section",
       null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -956,7 +968,12 @@ var Details = function Details(props) {
         null,
         author
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "public/images/books/" + books, alt: "Book cover for " + title })
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "p",
+        null,
+        genre
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "public/images/books/" + cover, alt: "Book cover for " + title })
     )
   );
 };
@@ -1046,7 +1063,15 @@ var Landing = function (_Component) {
             type: 'text',
             placeholder: 'Add your favorite books'
           }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */], { to: '/search' })
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'button',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
+              { to: '/search' },
+              'Browse'
+            )
+          )
         )
       )
     );
@@ -1137,7 +1162,7 @@ var Search = function (_Component) {
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         null,
-        props.books.filter(function (book) {
+        this.props.books.filter(function (book) {
           return (book.title + ' ' + book.author).toUpperCase().indexOf(_this3.state.searchTerm.toUpperCase()) >= 0;
         }).map(function (book, index) {
           return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__BookCard__["a" /* default */], _extends({}, book, { key: book.id, id: index }));

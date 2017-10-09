@@ -29,7 +29,7 @@ class Search extends Component {
             .filter(
               book => `${book.title} ${book.author}`.toUpperCase().indexOf(this.state.searchTerm.toUpperCase()) >= 0,
             )
-            .map((book, index) => <BookCard {...book} key={book.id} id={index} />)}
+            .map(book => <BookCard {...book} key={book.id} />)}
         </div>
       </div>
     );
