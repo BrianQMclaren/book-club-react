@@ -6,6 +6,7 @@ export type Book = {
   genre: string,
   cover: string,
   id: string,
+  description: string,
 };
 
 declare var module: {

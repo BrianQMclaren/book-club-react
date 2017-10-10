@@ -4,21 +4,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const Wrapper = styled(Link)`
-  width: 52%;
-  border: 1px solid;
-  border-color: rgba(210, 210, 210, 0.5);
-  padding-right: 10px;
-  margin-bottom: 25px;
+const Wrapper = styled((Link: any))`
   text-decoration: none;
   color: black;
+  margin: 0 auto;
 `;
 
-const Image = styled.img`
-  float: left;
-  width: 33%;
-  margin-right: 10px;
-`;
+const Image = styled.img``;
 
 class BookCard extends React.Component {
   shouldComponentUpdate() {
@@ -30,9 +22,11 @@ class BookCard extends React.Component {
       <Wrapper to={`/details/${this.props.id}`}>
         <Image alt={`${this.props.title} Show Book`} src={`/public/images/books/${this.props.cover}`} />
         <div>
-          <h3>{this.props.title}</h3>
-          <h4>{this.props.author}</h4>
-          <p>{this.props.genre}</p>
+          <ul>
+            <li>{this.props.title}</li>
+            <li>{this.props.author}</li>
+            <li>{this.props.genre}</li>
+          </ul>
         </div>
       </Wrapper>
     );

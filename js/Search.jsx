@@ -15,22 +15,12 @@ class Search extends Component {
   };
   render() {
     return (
-      <div className="main">
-        <form>
-          <input
-            onChange={this.handleSearchTermChange}
-            value={this.state.searchTerm}
-            type="text"
-            placeholder="Search"
-          />
-        </form>
-        <div>
-          {this.props.books
-            .filter(
-              book => `${book.title} ${book.author}`.toUpperCase().indexOf(this.state.searchTerm.toUpperCase()) >= 0,
-            )
-            .map(book => <BookCard {...book} key={book.id} />)}
-        </div>
+      <div className="search">
+        {this.props.books
+          .filter(
+            book => `${book.title} ${book.author}`.toUpperCase().indexOf(this.state.searchTerm.toUpperCase()) >= 0,
+          )
+          .map(book => <BookCard {...book} key={book.id} />)}
       </div>
     );
   }

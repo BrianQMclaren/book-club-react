@@ -8,7 +8,8 @@
       "series": "Percy Jackson and the Olympians",
       "cover": "a.jpg",
       "genre": "fantasy",
-      "inStock": true,
+      "description":
+        "It is the first novel in the Percy Jackson & the Olympians series, which charts the adventures of modern-day twelve-year-old Percy Jackson as he discovers he is a demigod, the son of a mortal woman and the Greek god Poseidon.",
       "price": 12.5,
       "pages": 384
     },
@@ -20,7 +21,8 @@
       "series": "Percy Jackson and the Olympians",
       "cover": "b.jpg",
       "genre": "fantasy",
-      "inStock": true,
+      "description":
+        "In this retelling of Rick Riordans book, 'The Sea of Monsters', Percy Jackson, accompanied by his friends Annabeth Chase, Clarisse La Rue and Tyson, his half brother, goes on a journey to the Sea of Monsters to retrieve the Golden Fleece and save Camp Half-Blood.",
       "price": 6.49,
       "pages": 304
     },
@@ -31,7 +33,8 @@
       "author": "Jostein Gaarder",
       "cover": "c.jpg",
       "genre": "fantasy",
-      "inStock": true,
+      "description":
+        "Sophie's World. ... Sophie's World (Norwegian: Sofies verden) is a 1991 novel by Norwegian writer Jostein Gaarder. It follows the events of Sophie Amundsen, a teenage girl living in Norway, and Alberto Knox, a middle-aged philosopher who introduces her to philosophical thinking and the history of philosophy.",
       "price": 3.07,
       "pages": 64
     },
@@ -42,7 +45,8 @@
       "author": "Michael McCandless",
       "cover": "d.jpg",
       "genre": "IT",
-      "inStock": true,
+      "description":
+        "When Lucene first hit the scene five years ago, it was nothing short ofamazing. By using this open-source, highly scalable, super-fast search engine, developers could integrate search into applications quickly and efficiently. A lot has changed since then-search has grown from a 'nice-to-have' feature into an indispensable part of most enterprise applications. Lucene now powerssearch in diverse companies including Akamai, Netflix, LinkedIn,Technorati, HotJobs, Epiphany, FedEx, Mayo Clinic, MIT, New ScientistMagazine, and many others.",
       "price": 30.5,
       "pages": 475
     }
