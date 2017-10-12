@@ -3,6 +3,7 @@ import preload from '../../data.json';
 import { shallow, mount, render } from 'enzyme';
 import Search from '../Search';
 import BookCard from '../BookCard';
+import Header from '../Header';
 
 test('Search renders correctly', () => {
   const component = shallow(<Search books={preload.books} />);
@@ -15,7 +16,11 @@ test('Search should render correct amount of books', () => {
 });
 
 test('Search should render correct amount of books based on search term', () => {
-  const searchWord = 'the';
+  const searchWord = 'lucene';
   const component = shallow(<Search books={preload.books} />);
-  component.find('input').simulate('change', { target: { value: searchWord } });
+  component
+    .find(Header)
+    .dive()
+    .find('input')
+    .simulate('change', { target: { value: searchWord } });
 });
