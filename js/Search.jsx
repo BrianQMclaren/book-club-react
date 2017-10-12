@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import BookCard from './BookCard';
+import Header from './Header';
 
 class Search extends Component {
   state = {
@@ -15,12 +16,20 @@ class Search extends Component {
   };
   render() {
     return (
-      <div className="search">
-        {this.props.books
-          .filter(
-            book => `${book.title} ${book.author}`.toUpperCase().indexOf(this.state.searchTerm.toUpperCase()) >= 0,
-          )
-          .map(book => <BookCard {...book} key={book.id} />)}
+      <div>
+        <Header
+          handleSearchTermChange={this.handleSearchTermChange}
+          showSearch
+          searchTerm={this.state.searchTerm}
+          className="details"
+        />
+        <div className="search">
+          {this.props.books
+            .filter(
+              book => `${book.title} ${book.author}`.toUpperCase().indexOf(this.state.searchTerm.toUpperCase()) >= 0,
+            )
+            .map(book => <BookCard {...book} key={book.id} />)}
+        </div>
       </div>
     );
   }

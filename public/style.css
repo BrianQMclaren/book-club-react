@@ -16,7 +16,7 @@ body {
   width: 100%;
   max-width: 900px;
   background: #fcfcfc;
-  margin: 2.5em auto;
+  margin: 5.5em auto;
   overflow: hidden;
   border-radius: .35em;
   -webkit-box-shadow: 0 0 26px rgba(0, 0, 0, .13);
@@ -28,9 +28,52 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
+.details {
+  padding: 1.5em;
+  margin: 0 auto;
+  color: #7bcbc4;
+  background: #fcfcfc;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 0.35em;
+  -webkit-box-shadow: 0 0 26px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.13);
+}
+
+.details p {
+  float: left;
+  width: 50%;
+  color: #7bcbc4;
+}
+
+.details h1 {
+  color: #7bcbc4;
+}
+
+
+.details-header {
+  text-decoration: none;
+  color: #58b7cd;
+  font-size: 2.5em;
+  font-family: 'Courgette', cursive;
+}
+
+.details-back {
+  position: relative;
+  float: right;
+  bottom: 40px;
+  right: 20px;
+  text-decoration: none;
+  color: salmon;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
 
 h1,
 form button {
@@ -113,6 +156,7 @@ header input {
   width: 100%;
 }
 
+
 li span,
 li input[type=text] {
   color: #707070;
@@ -124,10 +168,6 @@ li input[type=text] {
   padding: .2em;
   width: 95%;
   border: 1px dotted rgba(0, 0, 0, .2);
-}
-
-input[type="checkbox"] {
-  margin-right: 5px;
 }
 
 li label {
@@ -164,43 +204,6 @@ div > label {
   color: #767676;
 }
 
-tr {
-  color: rgba(118, 118, 118, .75);
-}
-
-td:last-child {
-  font-weight: bold;
-  font-size: 1.16em;
-  color: rgb(118, 118, 118);
-}
-
-/* pending */
-
-.pending {
-  border-color: rgba(210, 210, 210, .5);
-}
-
-.pending span {
-  color: rgb(210, 210, 210);
-}
-/* responded */
-
-.responded {
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-  border-color: rgba(88, 183, 205, .9);
-}
-
-.responded label {
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-  color: rgba(88, 183, 205, 1);
-}
-
-
-
 /* =================================
   Media Queries
 ==================================== */
@@ -236,6 +239,12 @@ td:last-child {
   }
   .main {
     padding: 2em 1em .75em;
+  }
+
+  .details p {
+    float: none;
+    width: 100%;
+    display: block;
   }
 
 }

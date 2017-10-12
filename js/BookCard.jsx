@@ -10,7 +10,12 @@ const Wrapper = styled((Link: any))`
   margin: 0 auto;
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 0.15em;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+`;
 
 class BookCard extends React.Component {
   shouldComponentUpdate() {
