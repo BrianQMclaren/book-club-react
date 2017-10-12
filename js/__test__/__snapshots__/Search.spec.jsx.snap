@@ -1,84 +1,634 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search renders correctly 1`] = `
-<div
-  className="main"
->
-  <form>
-    <input
-      onChange={[Function]}
-      placeholder="Search"
-      type="text"
-      value=""
-    />
-  </form>
-  <div>
-    <BookCard
-      author="Rick Riordan"
-      cat={
-        Array [
-          "book",
-          "hardcover",
-        ]
-      }
-      cover="a.jpg"
-      genre="fantasy"
-      id={0}
-      inStock={true}
-      pages={384}
-      price={12.5}
-      series="Percy Jackson and the Olympians"
-      title="The Lightning Thief"
-    />
-    <BookCard
-      author="Rick Riordan"
-      cat={
-        Array [
-          "book",
-          "paperback",
-        ]
-      }
-      cover="b.jpg"
-      genre="fantasy"
-      id={1}
-      inStock={true}
-      pages={304}
-      price={6.49}
-      series="Percy Jackson and the Olympians"
-      title="The Sea of Monsters"
-    />
-    <BookCard
-      author="Jostein Gaarder"
-      cat={
-        Array [
-          "book",
-          "paperback",
-        ]
-      }
-      cover="c.jpg"
-      genre="fantasy"
-      id={2}
-      inStock={true}
-      pages={64}
-      price={3.07}
-      title="Sophie's World : The Greek Philosophers"
-    />
-    <BookCard
-      author="Michael McCandless"
-      cat={
-        Array [
-          "book",
-          "paperback",
-        ]
-      }
-      cover="d.jpg"
-      genre="IT"
-      id={3}
-      inStock={true}
-      pages={475}
-      price={30.5}
-      title="Lucene in Action, Second Edition"
-    />
-  </div>
-</div>
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Search
+    books={
+      Array [
+        Object {
+          "author": "Rick Riordan",
+          "cat": Array [
+            "book",
+            "hardcover",
+          ],
+          "cover": "a.jpg",
+          "description": "It is the first novel in the Percy Jackson & the Olympians series, which charts the adventures of modern-day twelve-year-old Percy Jackson as he discovers he is a demigod, the son of a mortal woman and the Greek god Poseidon.",
+          "genre": "fantasy",
+          "id": "978-0641723445",
+          "pages": 384,
+          "price": 12.5,
+          "series": "Percy Jackson and the Olympians",
+          "title": "The Lightning Thief",
+        },
+        Object {
+          "author": "Rick Riordan",
+          "cat": Array [
+            "book",
+            "paperback",
+          ],
+          "cover": "b.jpg",
+          "description": "In this retelling of Rick Riordans book, 'The Sea of Monsters', Percy Jackson, accompanied by his friends Annabeth Chase, Clarisse La Rue and Tyson, his half brother, goes on a journey to the Sea of Monsters to retrieve the Golden Fleece and save Camp Half-Blood.",
+          "genre": "fantasy",
+          "id": "978-1423103349",
+          "pages": 304,
+          "price": 6.49,
+          "series": "Percy Jackson and the Olympians",
+          "title": "The Sea of Monsters",
+        },
+        Object {
+          "author": "Jostein Gaarder",
+          "cat": Array [
+            "book",
+            "paperback",
+          ],
+          "cover": "c.jpg",
+          "description": "Sophie's World. ... Sophie's World (Norwegian: Sofies verden) is a 1991 novel by Norwegian writer Jostein Gaarder. It follows the events of Sophie Amundsen, a teenage girl living in Norway, and Alberto Knox, a middle-aged philosopher who introduces her to philosophical thinking and the history of philosophy.",
+          "genre": "fantasy",
+          "id": "978-1857995879",
+          "pages": 64,
+          "price": 3.07,
+          "title": "Sophie's World : The Greek Philosophers",
+        },
+        Object {
+          "author": "Michael McCandless",
+          "cat": Array [
+            "book",
+            "paperback",
+          ],
+          "cover": "d.jpg",
+          "description": "When Lucene first hit the scene five years ago, it was nothing short ofamazing. By using this open-source, highly scalable, super-fast search engine, developers could integrate search into applications quickly and efficiently. A lot has changed since then-search has grown from a 'nice-to-have' feature into an indispensable part of most enterprise applications. Lucene now powerssearch in diverse companies including Akamai, Netflix, LinkedIn,Technorati, HotJobs, Epiphany, FedEx, Mayo Clinic, MIT, New ScientistMagazine, and many others.",
+          "genre": "IT",
+          "id": "978-1933988177",
+          "pages": 475,
+          "price": 30.5,
+          "title": "Lucene in Action, Second Edition",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Header
+          className="details"
+          handleSearchTermChange={[Function]}
+          searchTerm=""
+          showSearch={true}
+        />,
+        <div
+          className="search"
+        >
+          <BookCard
+            author="Rick Riordan"
+            cat={
+              Array [
+                "book",
+                "hardcover",
+              ]
+            }
+            cover="a.jpg"
+            description="It is the first novel in the Percy Jackson & the Olympians series, which charts the adventures of modern-day twelve-year-old Percy Jackson as he discovers he is a demigod, the son of a mortal woman and the Greek god Poseidon."
+            genre="fantasy"
+            id="978-0641723445"
+            pages={384}
+            price={12.5}
+            series="Percy Jackson and the Olympians"
+            title="The Lightning Thief"
+          />
+          <BookCard
+            author="Rick Riordan"
+            cat={
+              Array [
+                "book",
+                "paperback",
+              ]
+            }
+            cover="b.jpg"
+            description="In this retelling of Rick Riordans book, 'The Sea of Monsters', Percy Jackson, accompanied by his friends Annabeth Chase, Clarisse La Rue and Tyson, his half brother, goes on a journey to the Sea of Monsters to retrieve the Golden Fleece and save Camp Half-Blood."
+            genre="fantasy"
+            id="978-1423103349"
+            pages={304}
+            price={6.49}
+            series="Percy Jackson and the Olympians"
+            title="The Sea of Monsters"
+          />
+          <BookCard
+            author="Jostein Gaarder"
+            cat={
+              Array [
+                "book",
+                "paperback",
+              ]
+            }
+            cover="c.jpg"
+            description="Sophie's World. ... Sophie's World (Norwegian: Sofies verden) is a 1991 novel by Norwegian writer Jostein Gaarder. It follows the events of Sophie Amundsen, a teenage girl living in Norway, and Alberto Knox, a middle-aged philosopher who introduces her to philosophical thinking and the history of philosophy."
+            genre="fantasy"
+            id="978-1857995879"
+            pages={64}
+            price={3.07}
+            title="Sophie's World : The Greek Philosophers"
+          />
+          <BookCard
+            author="Michael McCandless"
+            cat={
+              Array [
+                "book",
+                "paperback",
+              ]
+            }
+            cover="d.jpg"
+            description="When Lucene first hit the scene five years ago, it was nothing short ofamazing. By using this open-source, highly scalable, super-fast search engine, developers could integrate search into applications quickly and efficiently. A lot has changed since then-search has grown from a 'nice-to-have' feature into an indispensable part of most enterprise applications. Lucene now powerssearch in diverse companies including Akamai, Netflix, LinkedIn,Technorati, HotJobs, Epiphany, FedEx, Mayo Clinic, MIT, New ScientistMagazine, and many others."
+            genre="IT"
+            id="978-1933988177"
+            pages={475}
+            price={30.5}
+            title="Lucene in Action, Second Edition"
+          />
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "function",
+        "props": Object {
+          "className": "details",
+          "handleSearchTermChange": [Function],
+          "searchTerm": "",
+          "showSearch": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <BookCard
+              author="Rick Riordan"
+              cat={
+                Array [
+                  "book",
+                  "hardcover",
+                ]
+              }
+              cover="a.jpg"
+              description="It is the first novel in the Percy Jackson & the Olympians series, which charts the adventures of modern-day twelve-year-old Percy Jackson as he discovers he is a demigod, the son of a mortal woman and the Greek god Poseidon."
+              genre="fantasy"
+              id="978-0641723445"
+              pages={384}
+              price={12.5}
+              series="Percy Jackson and the Olympians"
+              title="The Lightning Thief"
+            />,
+            <BookCard
+              author="Rick Riordan"
+              cat={
+                Array [
+                  "book",
+                  "paperback",
+                ]
+              }
+              cover="b.jpg"
+              description="In this retelling of Rick Riordans book, 'The Sea of Monsters', Percy Jackson, accompanied by his friends Annabeth Chase, Clarisse La Rue and Tyson, his half brother, goes on a journey to the Sea of Monsters to retrieve the Golden Fleece and save Camp Half-Blood."
+              genre="fantasy"
+              id="978-1423103349"
+              pages={304}
+              price={6.49}
+              series="Percy Jackson and the Olympians"
+              title="The Sea of Monsters"
+            />,
+            <BookCard
+              author="Jostein Gaarder"
+              cat={
+                Array [
+                  "book",
+                  "paperback",
+                ]
+              }
+              cover="c.jpg"
+              description="Sophie's World. ... Sophie's World (Norwegian: Sofies verden) is a 1991 novel by Norwegian writer Jostein Gaarder. It follows the events of Sophie Amundsen, a teenage girl living in Norway, and Alberto Knox, a middle-aged philosopher who introduces her to philosophical thinking and the history of philosophy."
+              genre="fantasy"
+              id="978-1857995879"
+              pages={64}
+              price={3.07}
+              title="Sophie's World : The Greek Philosophers"
+            />,
+            <BookCard
+              author="Michael McCandless"
+              cat={
+                Array [
+                  "book",
+                  "paperback",
+                ]
+              }
+              cover="d.jpg"
+              description="When Lucene first hit the scene five years ago, it was nothing short ofamazing. By using this open-source, highly scalable, super-fast search engine, developers could integrate search into applications quickly and efficiently. A lot has changed since then-search has grown from a 'nice-to-have' feature into an indispensable part of most enterprise applications. Lucene now powerssearch in diverse companies including Akamai, Netflix, LinkedIn,Technorati, HotJobs, Epiphany, FedEx, Mayo Clinic, MIT, New ScientistMagazine, and many others."
+              genre="IT"
+              id="978-1933988177"
+              pages={475}
+              price={30.5}
+              title="Lucene in Action, Second Edition"
+            />,
+          ],
+          "className": "search",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "978-0641723445",
+            "nodeType": "class",
+            "props": Object {
+              "author": "Rick Riordan",
+              "cat": Array [
+                "book",
+                "hardcover",
+              ],
+              "cover": "a.jpg",
+              "description": "It is the first novel in the Percy Jackson & the Olympians series, which charts the adventures of modern-day twelve-year-old Percy Jackson as he discovers he is a demigod, the son of a mortal woman and the Greek god Poseidon.",
+              "genre": "fantasy",
+              "id": "978-0641723445",
+              "pages": 384,
+              "price": 12.5,
+              "series": "Percy Jackson and the Olympians",
+              "title": "The Lightning Thief",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "978-1423103349",
+            "nodeType": "class",
+            "props": Object {
+              "author": "Rick Riordan",
+              "cat": Array [
+                "book",
+                "paperback",
+              ],
+              "cover": "b.jpg",
+              "description": "In this retelling of Rick Riordans book, 'The Sea of Monsters', Percy Jackson, accompanied by his friends Annabeth Chase, Clarisse La Rue and Tyson, his half brother, goes on a journey to the Sea of Monsters to retrieve the Golden Fleece and save Camp Half-Blood.",
+              "genre": "fantasy",
+              "id": "978-1423103349",
+              "pages": 304,
+              "price": 6.49,
+              "series": "Percy Jackson and the Olympians",
+              "title": "The Sea of Monsters",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "978-1857995879",
+            "nodeType": "class",
+            "props": Object {
+              "author": "Jostein Gaarder",
+              "cat": Array [
+                "book",
+                "paperback",
+              ],
+              "cover": "c.jpg",
+              "description": "Sophie's World. ... Sophie's World (Norwegian: Sofies verden) is a 1991 novel by Norwegian writer Jostein Gaarder. It follows the events of Sophie Amundsen, a teenage girl living in Norway, and Alberto Knox, a middle-aged philosopher who introduces her to philosophical thinking and the history of philosophy.",
+              "genre": "fantasy",
+              "id": "978-1857995879",
+              "pages": 64,
+              "price": 3.07,
+              "title": "Sophie's World : The Greek Philosophers",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "978-1933988177",
+            "nodeType": "class",
+            "props": Object {
+              "author": "Michael McCandless",
+              "cat": Array [
+                "book",
+                "paperback",
+              ],
+              "cover": "d.jpg",
+              "description": "When Lucene first hit the scene five years ago, it was nothing short ofamazing. By using this open-source, highly scalable, super-fast search engine, developers could integrate search into applications quickly and efficiently. A lot has changed since then-search has grown from a 'nice-to-have' feature into an indispensable part of most enterprise applications. Lucene now powerssearch in diverse companies including Akamai, Netflix, LinkedIn,Technorati, HotJobs, Epiphany, FedEx, Mayo Clinic, MIT, New ScientistMagazine, and many others.",
+              "genre": "IT",
+              "id": "978-1933988177",
+              "pages": 475,
+              "price": 30.5,
+              "title": "Lucene in Action, Second Edition",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Header
+            className="details"
+            handleSearchTermChange={[Function]}
+            searchTerm=""
+            showSearch={true}
+          />,
+          <div
+            className="search"
+          >
+            <BookCard
+              author="Rick Riordan"
+              cat={
+                Array [
+                  "book",
+                  "hardcover",
+                ]
+              }
+              cover="a.jpg"
+              description="It is the first novel in the Percy Jackson & the Olympians series, which charts the adventures of modern-day twelve-year-old Percy Jackson as he discovers he is a demigod, the son of a mortal woman and the Greek god Poseidon."
+              genre="fantasy"
+              id="978-0641723445"
+              pages={384}
+              price={12.5}
+              series="Percy Jackson and the Olympians"
+              title="The Lightning Thief"
+            />
+            <BookCard
+              author="Rick Riordan"
+              cat={
+                Array [
+                  "book",
+                  "paperback",
+                ]
+              }
+              cover="b.jpg"
+              description="In this retelling of Rick Riordans book, 'The Sea of Monsters', Percy Jackson, accompanied by his friends Annabeth Chase, Clarisse La Rue and Tyson, his half brother, goes on a journey to the Sea of Monsters to retrieve the Golden Fleece and save Camp Half-Blood."
+              genre="fantasy"
+              id="978-1423103349"
+              pages={304}
+              price={6.49}
+              series="Percy Jackson and the Olympians"
+              title="The Sea of Monsters"
+            />
+            <BookCard
+              author="Jostein Gaarder"
+              cat={
+                Array [
+                  "book",
+                  "paperback",
+                ]
+              }
+              cover="c.jpg"
+              description="Sophie's World. ... Sophie's World (Norwegian: Sofies verden) is a 1991 novel by Norwegian writer Jostein Gaarder. It follows the events of Sophie Amundsen, a teenage girl living in Norway, and Alberto Knox, a middle-aged philosopher who introduces her to philosophical thinking and the history of philosophy."
+              genre="fantasy"
+              id="978-1857995879"
+              pages={64}
+              price={3.07}
+              title="Sophie's World : The Greek Philosophers"
+            />
+            <BookCard
+              author="Michael McCandless"
+              cat={
+                Array [
+                  "book",
+                  "paperback",
+                ]
+              }
+              cover="d.jpg"
+              description="When Lucene first hit the scene five years ago, it was nothing short ofamazing. By using this open-source, highly scalable, super-fast search engine, developers could integrate search into applications quickly and efficiently. A lot has changed since then-search has grown from a 'nice-to-have' feature into an indispensable part of most enterprise applications. Lucene now powerssearch in diverse companies including Akamai, Netflix, LinkedIn,Technorati, HotJobs, Epiphany, FedEx, Mayo Clinic, MIT, New ScientistMagazine, and many others."
+              genre="IT"
+              id="978-1933988177"
+              pages={475}
+              price={30.5}
+              title="Lucene in Action, Second Edition"
+            />
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "function",
+          "props": Object {
+            "className": "details",
+            "handleSearchTermChange": [Function],
+            "searchTerm": "",
+            "showSearch": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <BookCard
+                author="Rick Riordan"
+                cat={
+                  Array [
+                    "book",
+                    "hardcover",
+                  ]
+                }
+                cover="a.jpg"
+                description="It is the first novel in the Percy Jackson & the Olympians series, which charts the adventures of modern-day twelve-year-old Percy Jackson as he discovers he is a demigod, the son of a mortal woman and the Greek god Poseidon."
+                genre="fantasy"
+                id="978-0641723445"
+                pages={384}
+                price={12.5}
+                series="Percy Jackson and the Olympians"
+                title="The Lightning Thief"
+              />,
+              <BookCard
+                author="Rick Riordan"
+                cat={
+                  Array [
+                    "book",
+                    "paperback",
+                  ]
+                }
+                cover="b.jpg"
+                description="In this retelling of Rick Riordans book, 'The Sea of Monsters', Percy Jackson, accompanied by his friends Annabeth Chase, Clarisse La Rue and Tyson, his half brother, goes on a journey to the Sea of Monsters to retrieve the Golden Fleece and save Camp Half-Blood."
+                genre="fantasy"
+                id="978-1423103349"
+                pages={304}
+                price={6.49}
+                series="Percy Jackson and the Olympians"
+                title="The Sea of Monsters"
+              />,
+              <BookCard
+                author="Jostein Gaarder"
+                cat={
+                  Array [
+                    "book",
+                    "paperback",
+                  ]
+                }
+                cover="c.jpg"
+                description="Sophie's World. ... Sophie's World (Norwegian: Sofies verden) is a 1991 novel by Norwegian writer Jostein Gaarder. It follows the events of Sophie Amundsen, a teenage girl living in Norway, and Alberto Knox, a middle-aged philosopher who introduces her to philosophical thinking and the history of philosophy."
+                genre="fantasy"
+                id="978-1857995879"
+                pages={64}
+                price={3.07}
+                title="Sophie's World : The Greek Philosophers"
+              />,
+              <BookCard
+                author="Michael McCandless"
+                cat={
+                  Array [
+                    "book",
+                    "paperback",
+                  ]
+                }
+                cover="d.jpg"
+                description="When Lucene first hit the scene five years ago, it was nothing short ofamazing. By using this open-source, highly scalable, super-fast search engine, developers could integrate search into applications quickly and efficiently. A lot has changed since then-search has grown from a 'nice-to-have' feature into an indispensable part of most enterprise applications. Lucene now powerssearch in diverse companies including Akamai, Netflix, LinkedIn,Technorati, HotJobs, Epiphany, FedEx, Mayo Clinic, MIT, New ScientistMagazine, and many others."
+                genre="IT"
+                id="978-1933988177"
+                pages={475}
+                price={30.5}
+                title="Lucene in Action, Second Edition"
+              />,
+            ],
+            "className": "search",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "978-0641723445",
+              "nodeType": "class",
+              "props": Object {
+                "author": "Rick Riordan",
+                "cat": Array [
+                  "book",
+                  "hardcover",
+                ],
+                "cover": "a.jpg",
+                "description": "It is the first novel in the Percy Jackson & the Olympians series, which charts the adventures of modern-day twelve-year-old Percy Jackson as he discovers he is a demigod, the son of a mortal woman and the Greek god Poseidon.",
+                "genre": "fantasy",
+                "id": "978-0641723445",
+                "pages": 384,
+                "price": 12.5,
+                "series": "Percy Jackson and the Olympians",
+                "title": "The Lightning Thief",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "978-1423103349",
+              "nodeType": "class",
+              "props": Object {
+                "author": "Rick Riordan",
+                "cat": Array [
+                  "book",
+                  "paperback",
+                ],
+                "cover": "b.jpg",
+                "description": "In this retelling of Rick Riordans book, 'The Sea of Monsters', Percy Jackson, accompanied by his friends Annabeth Chase, Clarisse La Rue and Tyson, his half brother, goes on a journey to the Sea of Monsters to retrieve the Golden Fleece and save Camp Half-Blood.",
+                "genre": "fantasy",
+                "id": "978-1423103349",
+                "pages": 304,
+                "price": 6.49,
+                "series": "Percy Jackson and the Olympians",
+                "title": "The Sea of Monsters",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "978-1857995879",
+              "nodeType": "class",
+              "props": Object {
+                "author": "Jostein Gaarder",
+                "cat": Array [
+                  "book",
+                  "paperback",
+                ],
+                "cover": "c.jpg",
+                "description": "Sophie's World. ... Sophie's World (Norwegian: Sofies verden) is a 1991 novel by Norwegian writer Jostein Gaarder. It follows the events of Sophie Amundsen, a teenage girl living in Norway, and Alberto Knox, a middle-aged philosopher who introduces her to philosophical thinking and the history of philosophy.",
+                "genre": "fantasy",
+                "id": "978-1857995879",
+                "pages": 64,
+                "price": 3.07,
+                "title": "Sophie's World : The Greek Philosophers",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "978-1933988177",
+              "nodeType": "class",
+              "props": Object {
+                "author": "Michael McCandless",
+                "cat": Array [
+                  "book",
+                  "paperback",
+                ],
+                "cover": "d.jpg",
+                "description": "When Lucene first hit the scene five years ago, it was nothing short ofamazing. By using this open-source, highly scalable, super-fast search engine, developers could integrate search into applications quickly and efficiently. A lot has changed since then-search has grown from a 'nice-to-have' feature into an indispensable part of most enterprise applications. Lucene now powerssearch in diverse companies including Akamai, Netflix, LinkedIn,Technorati, HotJobs, Epiphany, FedEx, Mayo Clinic, MIT, New ScientistMagazine, and many others.",
+                "genre": "IT",
+                "id": "978-1933988177",
+                "pages": 475,
+                "price": 30.5,
+                "title": "Lucene in Action, Second Edition",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
 `;
