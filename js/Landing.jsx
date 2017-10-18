@@ -1,14 +1,24 @@
 // @flow
 
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import type { RouterHistory } from 'react-router-dom';
+import { object } from 'prop-types';
+import { setSearchTerm } from './actionCreators';
 
 class Landing extends Component {
-  state = {
-    searchTerm: '',
+  static contextTypes = {
+    history: object,
   };
-  handleSearchTermChange = event => {
-    this.setState({ searchTerm: event.target.value });
+  props: {
+    searchTerm: string,
+    handleSearchTermChange: Function,
+    history: RouterHistory,
+  };
+  goToSearch = (event: SyntheticEvent) => {
+    event.preventDefault();
+    this.props.history.push('/search');
   };
   render() {
     return (
@@ -16,10 +26,10 @@ class Landing extends Component {
         <header>
           <h1>Book Club</h1>
           <p>Search for your favorite books</p>
-          <form>
+          <form onSubmit={this.goToSearch}>
             <input
-              onChange={this.handleSearchTermChange}
-              value={this.state.searchTerm}
+              onChange={this.props.handleSearchTermChange}
+              value={this.props.searchTerm}
               type="text"
               placeholder="Add your favorite books"
             />
@@ -33,4 +43,14 @@ class Landing extends Component {
   }
 }
 
-export default Landing;
+const mapStateToProps = state => ({
+  searchTerm: state.searchTerm,
+});
+
+const mapDispatchToProps = (dispatch: Function) => ({
+  handleSearchTermChange(event) {
+    dispatch(setSearchTerm(event.target.value));
+  },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Landing);

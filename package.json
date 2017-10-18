@@ -23,12 +23,18 @@
     "react-addons-perf": "^15.4.2",
     "react-dom": "16",
     "react-hot-loader": "next",
+    "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
     "styled-components": "^2.2.0",
     "webpack": "^3.6.0"
   },
   "jest": {
-    "setupFiles": ["raf/polyfill", "./js/__test__/setupTests.js"]
+    "setupFiles": [
+      "raf/polyfill",
+      "./js/__test__/setupTests.js"
+    ]
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
