@@ -10,7 +10,7 @@ import Details from "./Details";
 import store from "./store";
 import preload from "../data.json";
 
-const FourOhFour = () => <h1>404</h1>;
+const FourOhFour = () => <p>404</p>;
 
 const App = () => (
   <Provider store={store}>

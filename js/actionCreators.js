@@ -19,9 +19,9 @@ export function getAPIDetails(id: string) {
         dispatch(addAPIData(response.data));
       })
       .catch(error => {
-        console.error("axios error", error);
+        console.error("axios error", error); // eslint-disable-line no-console
       });
   };
 }
 
-export default SET_SEARCH_TERM;
+export default SET_SEARCH_TERM && ADD_API_DATA;

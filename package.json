@@ -3,7 +3,8 @@
     "build": "webpack -p",
     "build:dev": "webpack -d",
     "dev": "webpack-dev-server",
-    "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/**/*.{js,jsx}\"",
+    "format":
+      "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/**/*.{js,jsx}\"",
     "lint": "eslint **/*.{js,jsx} --quiet",
     "start": "NODE_ENV=server node server.js",
     "test": "jest",
@@ -37,10 +38,7 @@
     "webpack-hot-middleware": "^2.20.0"
   },
   "jest": {
-    "setupFiles": [
-      "raf/polyfill",
-      "./js/__test__/setupTests.js"
-    ]
+    "setupFiles": ["raf/polyfill", "./js/__test__/setupTests.js"]
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
