@@ -1,14 +1,15 @@
 const path = require("path");
 const webpack = require("webpack");
 
-module.exports = {
+const config = {
   context: __dirname,
   entry: [
     "react-hot-loader/patch",
     "webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000",
     "./js/ClientApp.jsx"
   ],
-  devtool: "cheap-module-source-map",
+  devtool:
+    process.env.NODE_ENV === "development" ? "cheap-eval-source-map" : false,
   output: {
     path: path.join(__dirname, "public"),
     filename: "bundle.js",
@@ -20,7 +21,11 @@ module.exports = {
     historyApiFallback: true
   },
   resolve: {
-    extensions: [".js", ".jsx", ".json"]
+    extensions: [".js", ".jsx", ".json"],
+    alias: {
+      react: "preact-compat",
+      "react-dom": "preact-compat"
+    }
   },
   stats: {
     colors: true,
@@ -42,8 +47,20 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: "babel-loader",
+        include: [
+          path.resolve("js"),
+          path.resolve("node_modules/preact-compat/src")
+        ],
         query: { compact: false }
       }
     ]
   }
 };
+
+if (process.env.NODE_ENV === "development") {
+  config.entry.unshift(
+    "webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000"
+  );
+}
+
+module.exports = config;
