@@ -9,7 +9,7 @@ import Header from "./Header";
 const Image = styled.img`
   margin: 0 auto;
   position: relative;
-  bottom: 80px;
+  bottom: 80px; 
   left: 40px;
   @media (max-width: 769px) {
     bottom: 0;

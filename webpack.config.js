@@ -3,11 +3,7 @@ const webpack = require("webpack");
 
 const config = {
   context: __dirname,
-  entry: [
-    "react-hot-loader/patch",
-    "webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000",
-    "./js/ClientApp.jsx"
-  ],
+  entry: ["react-hot-loader/patch", "./js/ClientApp.jsx"],
   devtool:
     process.env.NODE_ENV === "development" ? "cheap-eval-source-map" : false,
   output: {
@@ -50,8 +46,7 @@ const config = {
         include: [
           path.resolve("js"),
           path.resolve("node_modules/preact-compat/src")
-        ],
-        query: { compact: false }
+        ]
       }
     ]
   }

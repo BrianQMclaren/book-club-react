@@ -2,7 +2,7 @@ require("babel-register");
 
 const express = require("express");
 const React = require("react");
-const ReactDOMServer = require("react-dom/server");
+
 const ReactRouter = require("react-router-dom");
 const _ = require("lodash");
 const fs = require("fs");
@@ -12,6 +12,7 @@ const StaticRouter = ReactRouter.StaticRouter;
 const port = 8080;
 const baseTemplate = fs.readFileSync("./index.html");
 const template = _.template(baseTemplate);
+const ReactDOMStream = require("react-dom-stream/server");
 
 const webpackDevMiddleware = require("webpack-dev-middleware");
 const webpackHotMiddleware = require("webpack-hot-middleware");
@@ -36,7 +37,7 @@ server.use("/public", express.static("./public"));
 
 server.use((req, res) => {
   const context = {};
-  const body = ReactDOMServer.renderToString(
+  const body = ReactDOMStream.renderToStaticMarkup(
     React.createElement(
       StaticRouter,
       { location: req.url, context },

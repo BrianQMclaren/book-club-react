@@ -1,0 +1,43 @@
+{
+  "name": "react-dom-stream",
+  "version": "0.5.1",
+  "description": "A streaming server-side rendering library for React.",
+  "main": "index.js",
+  "scripts": {
+    "test": "(cd ../react && grunt test)",
+    "build": "(cd ../react && grunt build) && ./node_modules/babel-cli/bin/babel.js modules --out-dir build",
+    "postbuild": "rm -rf lib && cp -R ../react/build/packages/react/lib lib && rm -rf dist && cp -R ../react/build/packages/react/dist dist",
+    "prepublish": "npm run build"
+  },
+  "author": "Sasha Aickin",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aickin/react-dom-stream.git"
+  },
+  "homepage": "https://github.com/aickin/react-dom-stream",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "envify": "^3.0.0",
+    "fbjs": "^0.3.1",
+    "lru-cache": "^4.0.0"
+  },
+  "browserify": {
+    "transform": [
+      "envify"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13"
+  }
+}

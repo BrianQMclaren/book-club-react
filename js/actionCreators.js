@@ -14,7 +14,7 @@ export function addAPIData(apiData: Book) {
 export function getAPIDetails(id: string) {
   return (dispatch: Function) => {
     axios
-      .get(`http://localhost:3000/${id}`)
+      .get(`http://localhost:8080/${id}`)
       .then(response => {
         dispatch(addAPIData(response.data));
       })
