@@ -7,7 +7,7 @@
       "author": "Rick Riordan",
       "series": "Percy Jackson and the Olympians",
       "cover": "a.jpg",
-      "genre": "fantasy",
+      "genre": "Fantasy",
       "description":
         "It is the first novel in the Percy Jackson & the Olympians series, which charts the adventures of modern-day twelve-year-old Percy Jackson as he discovers he is a demigod, the son of a mortal woman and the Greek god Poseidon.",
       "price": 12.5,
@@ -20,7 +20,7 @@
       "author": "Rick Riordan",
       "series": "Percy Jackson and the Olympians",
       "cover": "b.jpg",
-      "genre": "fantasy",
+      "genre": "Fantasy",
       "description":
         "In this retelling of Rick Riordans book, 'The Sea of Monsters', Percy Jackson, accompanied by his friends Annabeth Chase, Clarisse La Rue and Tyson, his half brother, goes on a journey to the Sea of Monsters to retrieve the Golden Fleece and save Camp Half-Blood.",
       "price": 6.49,
@@ -29,10 +29,10 @@
     {
       "id": "978-1857995879",
       "cat": ["book", "paperback"],
-      "title": "Sophie's World : The Greek Philosophers",
+      "title": "Sophie's World:The Greek Philosophers",
       "author": "Jostein Gaarder",
       "cover": "c.jpg",
-      "genre": "fantasy",
+      "genre": "Fantasy",
       "description":
         "Sophie's World. ... Sophie's World (Norwegian: Sofies verden) is a 1991 novel by Norwegian writer Jostein Gaarder. It follows the events of Sophie Amundsen, a teenage girl living in Norway, and Alberto Knox, a middle-aged philosopher who introduces her to philosophical thinking and the history of philosophy.",
       "price": 3.07,
@@ -49,6 +49,30 @@
         "When Lucene first hit the scene five years ago, it was nothing short ofamazing. By using this open-source, highly scalable, super-fast search engine, developers could integrate search into applications quickly and efficiently. A lot has changed since then-search has grown from a 'nice-to-have' feature into an indispensable part of most enterprise applications. Lucene now powerssearch in diverse companies including Akamai, Netflix, LinkedIn,Technorati, HotJobs, Epiphany, FedEx, Mayo Clinic, MIT, New ScientistMagazine, and many others.",
       "price": 30.5,
       "pages": 475
+    },
+    {
+      "id": "978-0439358064",
+      "cat": ["book", "paperback"],
+      "title": "Harry Potter and the Order of the Phoenix",
+      "author": "J. K. Rowling",
+      "cover": "e.jpg",
+      "genre": "Fantasy",
+      "description":
+        "It follows Harry Potter's struggles through his fifth year at Hogwarts School of Witchcraft and Wizardry, including the surreptitious return of the antagonist Lord Voldemort, O.W.L. exams, and an obstructive Ministry of Magic.",
+      "price": 10.21,
+      "pages": 870
+    },
+    {
+      "id": "978-0062315007",
+      "cat": ["book", "paperback"],
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "cover": "f.jpg",
+      "genre": "Fantasy Fiction",
+      "description":
+        "Paulo Coelho's masterpiece tells the mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure. His quest will lead him to riches far different—and far more satisfying—than he ever imagined. Santiago's journey teaches us about the essential wisdom of listening to our hearts, of recognizing opportunity and learning to read the omens strewn along life's path, and, most importantly, to follow our dreams.",
+      "price": 13.55,
+      "pages": 208
     }
   ]
 }
