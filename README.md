@@ -6,10 +6,11 @@ A one page web app built with react, redux, jest, flow, and express. It's an app
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-1. Clone or download the project files from my repository
-2. Run npm install or yarn add in your terminal to get all of the packages
-3. Run the server by running this command yarn start or npm start
-
+```
+Clone or download the project files from my repository
+Run npm install or yarn add in your terminal to get all of the packages
+Run the server by running this command yarn start or npm start
+```
 ### Prerequisites
 
 What things you need to install software wise and how to install them
