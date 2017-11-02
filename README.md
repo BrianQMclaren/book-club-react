@@ -15,6 +15,7 @@ Run the server by running this command yarn start or npm start
 
 What things you need to install software wise and how to install them
 
+Install NPM (https://www.npmjs.com/) or Yarn (https://yarnpkg.com/en/)
 Install Node.js (https://nodejs.org/en/download/current/)
 
 ## Built With
