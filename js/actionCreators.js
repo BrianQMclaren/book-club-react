@@ -14,12 +14,14 @@ export function addAPIData(apiData: Book) {
 export function getAPIDetails(id: string) {
   return (dispatch: Function) => {
     axios
-      .get(`http://localhost:8080/${id}`)
+      .get(`https://obscure-tor-99436.herokuapp.com/${id}`)
       .then(response => {
         dispatch(addAPIData(response.data));
       })
       .catch(error => {
-        console.error("axios error", error); // eslint-disable-line no-console
+        if (error.response) {
+          console.error("axios error", error); // eslint-disable-line no-console
+        }
       });
   };
 }

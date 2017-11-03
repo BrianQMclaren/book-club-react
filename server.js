@@ -6,6 +6,7 @@ const React = require("react");
 const ReactRouter = require("react-router-dom");
 const _ = require("lodash");
 const fs = require("fs");
+const cors = require("cors");
 const App = require("./js/App").default;
 
 const StaticRouter = ReactRouter.StaticRouter;
@@ -21,6 +22,7 @@ const config = require("./webpack.config");
 const compression = require("compression");
 
 const server = express();
+server.use(cors());
 
 server.use(compression());
 if (process.env.NODE_ENV === "development") {
