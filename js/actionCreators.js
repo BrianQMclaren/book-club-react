@@ -14,7 +14,7 @@ export function addAPIData(apiData: Book) {
 export function getAPIDetails(id: string) {
   return (dispatch: Function) => {
     axios
-      .get(`https://obscure-tor-99436.herokuapp.com/${id}`)
+      .get(`https://bookclub-app.herokuapp.com/${id}`)
       .then(response => {
         dispatch(addAPIData(response.data));
       })
