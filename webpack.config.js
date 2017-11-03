@@ -20,7 +20,8 @@ const config = {
     extensions: [".js", ".jsx", ".json"],
     alias: {
       react: "preact-compat",
-      "react-dom": "preact-compat"
+      "react-dom": "preact-compat",
+      "preact-compat": "preact-compat/dist/preact-compat"
     }
   },
   stats: {
