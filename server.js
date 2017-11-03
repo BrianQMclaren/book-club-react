@@ -51,5 +51,6 @@ server.use((req, res) => {
   res.end();
 });
 
-console.log(`listening on ${port}`);
-server.listen(port);
+server.listen(process.env.PORT || port, () => {
+  console.log(`listening on ${port}`);
+});
