@@ -14,21 +14,29 @@ Install Node.js (https://nodejs.org/en/download/current/)
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ```
-Clone or download the project files from my repository -- git clone https://github.com/BrianQMclaren/book-club-react.git
-Run npm install in your terminal to get all of the packages -- npm install
-Run the server by running npm start -- npm start
+Clone or download the project files from my repository
+
+git clone https://github.com/BrianQMclaren/book-club-react.git
+
+Run npm install in your terminal to get all of the packages
+
+npm install
+
+Run the server by running npm start
+
+npm start
 
 ```
 ## Interacting With the App
 
 If you want to search for books these are the books in store
 
-The Lightning Thief by Rick Riordan
-The Sea of Monsters by Rick Riordan
-Sophie's World:The Greek Philosophers by Jostein Gaarder
-Lucene in Action, Second Edition by Michael McCandless
-Harry Potter and the Order of the Phoenix by J. K. Rowling
-The Alchemist by Paulo Coelho
+* The Lightning Thief by Rick Riordan
+* The Sea of Monsters by Rick Riordan
+* Sophie's World:The Greek Philosophers by Jostein Gaarder
+* Lucene in Action, Second Edition by Michael McCandless
+* Harry Potter and the Order of the Phoenix by J. K. Rowling
+* The Alchemist by Paulo Coelho
 
 ## Built With
 
