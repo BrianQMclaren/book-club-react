@@ -1,5 +1,6 @@
 {
   "presets": [
+    ["react"],
     [
       "env",
       {
@@ -9,8 +10,7 @@
         "loose": true,
         "modules": false
       }
-    ],
-    ["react"]
+    ]
   ],
   "plugins": [
     "react-hot-loader/babel",
